@@ -80,32 +80,118 @@
 										<span class="date"></span>
 										<h2>Paso 1</h2>
 									</header>
-									<div class="image fit"><img src="images/medicos2.jpeg" alt="" /></div>
-									<p>¡Hola! Yo soy Marina López, tengo 17 años y nací en Monterrey, Nuevo León. Actualmente estoy estudiando la licenciatura de Ingeniero Biomédico en la Universidad Autónoma de Nuevo León y este año al igual que mis compañeros soy participante en el CdeCMx Challenge!. Mis hobbies favoritos son, ver series o películas, escuchar música, el ciclismo, leer libros de ficción y visitar muchos lugares bonitos con mi familia y/o amigos.</p>
+									<p>Primero se importaron los grafos de COVID-Human PPI y Human-Drug PPIs, ya que trabajaremos con ellos principalmente en este proceso.</p>
+									<div class="image fit"><img src="images/Paso_uno.png" alt="" /></div>
+									
 
 								</article>
 								<article>
 									<header>
 										<span class="date"></span>
-										<h2>Hospital el Herrejón Atizapán</h2>
+										<h2>Paso 2</h2>
 									</header>
-									<div class="image fit"><img src="images/medicos3.jpeg" alt="" /></div>
+									<p>Después, se obtuvo la información general de cada grafo, de esta manera:</p>
+									<div class="image fit"><img src="images/Paso_dos.png" alt="" /></div>
+									
+									
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2>Paso 3</h2>
+									</header>
+									<p>Pero primero tenemos que hacerlos “undirected graphs”, para que la información pueda tener sentido:<p>
+									<div class="image fit"><img src="images/Paso_tres.png" alt="" /></div>
 
 								</article>
 								<article>
 									<header>
 										<span class="date"></span>
-										<h2>Hospital GEA González</h2>
+										<h2>Paso 4</h2>
 									</header>
-									<div class="image fit"><img src="images/medicos4.jpeg" alt="" /></div>
+									<p>Ahora lo que pasaremos a hacer es poner la información que está en los nodos de cada Network:<p>
+									<div class="image fit"><img src="images/Paso_cuatro.png" alt="" /></div>
 
 								</article>
 								<article>
 									<header>
 										<span class="date"></span>
-										<h2>Hospital GEA González</h2>
+										<h2>Paso 5</h2>
 									</header>
-									<div class="image fit"><img src="images/medicos5.jpeg" alt="" /></div>
+									<p>Y teniendo esto, podemos proseguir a renombrarlos apropiadamente:<p>
+									<div class="image fit"><img src="images/Paso_cinco.png" alt="" /></div>
+
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2>Paso 6</h2>
+									</header>
+									<p>Para poder diferenciarlos en una Network mayor, tenemos que ponerles a cada nodo un color, y así no confundirnos al momento de juntar las dos Networks:<p>
+									<div class="image fit"><img src="images/Paso_seis.png" alt="" /></div>
+
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2>Paso 7</h2>
+									</header>
+									<p>Y continuaremos a juntar las dos redes, de este modo:<p>
+									<div class="image fit"><img src="images/Paso_siete.png" alt="" /></div>
+
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2>Paso 8</h2>
+									</header>
+									<p>Correremos el siguiente código para probar que funcionan las dos redes juntas y se pueden diferenciar los nodos para trabajar mejor:<p>
+									<div class="image fit"><img src="images/Paso_ocho.png" alt="" /></div>
+
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2>Paso 9</h2>
+									</header>
+									<p>Nuestra red se verá de la siguiente manera, en donde los nodos de color Celeste = Fármacos, Amarillos = Proteínas Humanas, Rojos = Proteínas Virales.<p>
+									<div class="image fit"><img src="images/Paso_nueve.png" alt="" /></div>
+
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2>Paso 10</h2>
+									</header>
+									<p>Ahora procederemos a sacar el Degree para ver cuales son los fármacos que tienen más aristas y por consiguiente más oportunidades para poder interactuar con los otros nodos, y así enfocarnos en estos para investigarlos más:<p>
+									<div class="image fit"><img src="images/Paso_diez.png" alt="" /></div>
+
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2>Paso 11</h2>
+									</header>
+									<p>Ya que tenemos lo anterior, procederemos a graficar el Degree by Node, para poder hacer la información más interpretativa:<p>
+									<div class="image fit"><img src="images/Paso_once.png" alt="" /></div>
+
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2>Paso 12</h2>
+									</header>
+									<p>Así nos quedará:<p>
+									<div class="image fit"><img src="images/Paso_doce.png" alt="" /></div>
+
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2>Paso 13</h2>
+									</header>
+									<p>Y por último, ya tenemos los fármacos que más nos interesan para poder verlos más a fondo y así analizar su relación con el covid-19, y poder concretar una conclusión.<p>
+									<div class="image fit"><img src="images/Paso_trece.png" alt="" /></div>
 
 								</article>
 							</section>
